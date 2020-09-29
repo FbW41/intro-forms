@@ -1,0 +1,56 @@
+.container {
+  background-color: lightgrey;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.col:not(:first-child) {
+  border-left: 2px solid teal;
+  height: 85vh;
+}
+
+input {
+  width: 65%;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  max-width: 50%;
+}
+
+header {
+  background-color: lightskyblue;
+}
+
+h1,
+h2,
+form {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media all and (max-width: 800px) {
+  h1,
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

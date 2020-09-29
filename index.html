@@ -6,5 +6,102 @@
     <title>Intro to Forms & Inputs</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+      <div class="container">
+    <header>
+      <h1>Inputs & Forms</h1>
+    </header>
+
+    <main>
+      <div class="row">
+        <div class="col">
+          <h2>Reddit Search</h2>
+          <form method="GET" action="https://www.reddit.com/search/">
+            <label for="search">Search:</label>
+            <input
+              type="search"
+              name="q"
+              id="search"
+              placeholder="find stuff on reddit"
+            />
+            <br>
+            <label for="sort">Sort by:</label>
+            <select name="sort" id="sort">
+              <option value="relevance">relevance</option>
+              <option value="hot">hot</option>
+              <option value="top">top</option>
+              <option value="new">new</option>
+              <option value="comments">comments</option>
+            </select>
+
+            <input type="submit" value="Search" />
+          </form>
+        </div>
+<div class="col">
+          <h2>Text Input</h2>
+          <input type="text" placeholder="Username" />
+          <input type="text" placeholder="City" />
+
+          <h2>Email Inputs</h2>
+          <input type="email" name="email" id="email" />
+
+          <h2>Color Input</h2>
+          <input type="color" name="color" id="color" value="#ffffff" />
+
+          <h2>Date Input</h2>
+          <input type="date" name="date" id="date" />
+          <h2>Number input</h2>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="10"
+            max="100"
+            step="10"
+          />
+          </div>
+
+          <div class="col">
+          <h2>Password Input</h2>
+          <label for="password">Enter a strong Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password"
+          />
+          <label for="confirm">Please Confirm Password</label>
+          <input
+            type="password"
+            name="password"
+            id="confirm"
+            placeholder="Confirm Password"
+          />
+
+          <h2>Form</h2>
+          <!-- <form action="" method="get"></form> -->
+          <form action="http://www.bing.com">
+            <label for="username">username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="username"
+            />
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password"
+            />
+            <button type="submit">Submit</button>
+            <!-- <button>SUBMIT</button> -->
+          </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+  </body>
 </html>
