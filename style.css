@@ -30,7 +30,7 @@ input {
 
 input[type='radio'],
 input[type='checkbox'] {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 header {

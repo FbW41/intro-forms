@@ -33,9 +33,27 @@
               <option value="new">new</option>
               <option value="comments">comments</option>
             </select>
-
+<br>
             <input type="submit" value="Search" />
           </form>
+
+      <h2>Radio Buttons</h2>
+      <form action="">
+          <p>Pick your favorite  Beans:</p>
+          <label for="pinto">Pinto</label>
+          <input type="radio"name="beans" id="pinto" value="pinto">
+          <label for="black">Black</label>
+          <input type="radio"name="beans" id="black" value="black">
+          <label for="red">Red</label>
+          <input type="radio"name="beans" id="red" value="red">
+          <br>
+          <button type="submit">Submit</button>
+      </form>
+
+      <h2>Checkbox</h2>
+      <input type="checkbox" name="email" id="email" checked>
+      <label for="email">Subscribe to our Email list</label>
+
         </div>
 <div class="col">
           <h2>Text Input</h2>
@@ -59,6 +77,8 @@
             max="100"
             step="10"
           />
+
+          <input type="file" name="" id="">
           </div>
 
           <div class="col">
@@ -95,9 +115,16 @@
               id="password"
               placeholder="password"
             />
+            <br>
             <button type="submit">Submit</button>
             <!-- <button>SUBMIT</button> -->
           </form>
+
+
+          <h2>Text Area</h2>
+          <textarea name="" id="" cols="20" rows="5">
+              Comments or concerns?
+          </textarea>
           </div>
         </div>
       </div>
