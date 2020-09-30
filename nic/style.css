@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://www.placecage.com/200/300);
+}
+
+.container {
+  margin: 10px auto;
+  padding: 1em;
+  max-width: 80%;
+  background-color: #fdffb6d8;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 50px;
+}
+
+section {
+  flex-basis: 57%;
+  margin-right: 10%;
+}
+
+aside {
+  flex-basis: 33%;
+}
+
+p,
+[for='activity'] {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+
+fieldset,
+#activity {
+  margin-bottom: 2rem;
+}
+
+fieldset {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1.5;
+  margin-bottom: 1;
+  display: block;
+}
+
+label {
+  display: block;
+}
+
+input:not([type='radio']):not([type='checkbox']),
+textarea {
+  display: block;
+  margin-bottom: 2rem;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 0 1rem;
+}
+
+textarea {
+  height: 10rem;
+  padding: 1rem;
+}
+
+select {
+  font-size: 1rem;
+}
+
+button {
+  margin: 2rem 0;
+  background-color: lightblue;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(53, 183, 226);
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+  }
+}
