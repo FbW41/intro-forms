@@ -7,59 +7,104 @@
   </head>
 
   <body>
+    <div class="container">
+      <section>
+        <header>
+          <h1>Hang w/ Nic</h1>
+          <p>Fill out the form below for a chance to hang out with Nic cage</p>
+        </header>
 
- 
-       Hang w/ Nic
-       
-        Fill out the form below for a chance to hang out with Nic cage
-       
         <!-- form starts here -->
-        
-          Your contact information
-           Your name 
-          Phone number 
-           Email
+        <form action="">
+          <fieldset>
+            <legend>Your contact information</legend>
 
-           <!-- Maybe this should be seperate from the questions above? -->
-            About your hangout
-            Requested date
-           How many friends would you like to bring?
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="ex: nic cage"
+              autofocus
+            />
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+              placeholder="+1-123-456-7890"
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ex: bob@gmail.com"
+            />
+          </fieldset>
 
-            What type of Nic Cage do you prefer?
-          
-              <!-- can only choose one -->
+          <!-- Maybe this should be seperate from the questions above? -->
+          <fieldset>
+            <legend>About your hangout</legend>
+
+            <label for="date">Requested date</label>
+            <input type="date" name="date" id="date" />
+
+            <label for="qty"> How many friends would you like to bring?</label>
+            <input type="number" name="qty" id="qty" min="0" max="2" />
+
+            <p>What type of Nic Cage do you prefer?</p>
+            <!-- can only choose one -->
+            <label for="cool">
+              <input type="radio" name="nictype" value="cool" id="cool" />
               Cool
-           Crazy
-             Nic Rage
-            Normal Nic
-             Don't care
-           
+            </label>
+            <label for="">
+              <input type="radio" name="nictype" value="crazy" id="" />
+              Crazy
+            </label>
+            <label for="">
+              <input type="radio" name="nictype" value="rage" id="" />
+              Nic Rage
+            </label>
+            <label for="">
+              <input type="radio" name="nictype" value="normal" id="" />
+              Normal Nic
+            </label>
+            <label for="">
+              <input type="radio" name="nictype" value="any" id="" />
+              Don't care
+            </label>
 
-          What do you want to do?
-         <!-- some options here -->
-              Select one...
-             Tour of the solar system
-             dinner and discussion
-              dance lessons
-          Whale watching
+            <label for="activity">What do you want to do?</label>
+            <!-- some options here -->
+            <select name="activity" id="activity">
+              <option selected>Select one...</option>
+              <option value="tour">Tour of the solar system</option>
+              <option value="dinner">dinner and discussion</option>
+              <option value="dance">dance lessons</option>
+              <option value="whales">Whale watching</option>
+            </select>
 
-            Special requests:
-   <!-- place for comments here -->
+            <label for="comments">Special requests:</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <!-- place for comments here -->
 
- <!-- only one option - yes/no -->
-              Add me to your email list
-           
-        
-           Submit
+            <!-- only one option - yes/no -->
+            Add me to your email list Submit
+          </fieldset>
+        </form>
+      </section>
+      <!-- form ends -->
 
-           <!-- form ends -->
-      
-        Our Location
-
-          located at 
-          some 
-          address 
-        
+      Our Location located at some address
     </div>
   </body>
 </html>
