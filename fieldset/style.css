@@ -1,0 +1,16 @@
+.flex-container {
+  /* display: flex;
+  justify-content: space-between;
+  border: 1px solid red; */
+}
+
+fieldset {
+  border: 1px solid red;
+}
+
+button {
+  border: 1px solid red;
+}
+div {
+  border: 1px solid red;
+}
